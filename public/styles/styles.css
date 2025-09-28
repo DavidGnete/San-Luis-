@@ -9,7 +9,7 @@ body{
 }
 
 .fondo{
-    background-image: url('/public/images/ricky-beron-9aQgNay52u0-unsplash.jpg');
+    background-image: url('/images/ricky-beron-9aQgNay52u0-unsplash.jpg');
 
 }
 
@@ -192,7 +192,7 @@ h1, h2  {
 .container2 {
     padding-left: 20px;
     padding-right: 20px;
-    background-image: url('/public/images/lina-trochez-2_ECZolPuYw-unsplash.jpg');
+    background-image: url('/images/lina-trochez-2_ECZolPuYw-unsplash.jpg');
     background-position: center bottom;
     background-size: cover;
 }
