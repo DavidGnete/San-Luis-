@@ -24,3 +24,6 @@ dots.forEach((dot, i) => dot.addEventListener('click', () => showSlide(i)));
 // Slide inicial
 showSlide(index);
 
+
+
+
