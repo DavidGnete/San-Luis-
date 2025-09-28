@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel San Luis</title>
+    <link rel="stylesheet" href="/styles/sanluis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+    <div id="encabezado">
+        <nav >
+            <ul>
+            <li id="enlaces">
+                <a href="index.html">casa</a>
+                <a href="hospedajes.html">Hoteles</a>
+                <a href="aventura.html">aventuras</a>
+            </li>
+            </ul>
+        </nav>
+        <img src="/images/logo.png">
+        <div class="vacio"></div>
+        </div>
+</header>
+<main class="contenido">
+    <section class="imagenes">
+        <div class="galleria">
+            <img class="item1" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/8b/d6/28/paraiso-escondido-cabanas.jpg?w=1400&h=-1&s=1">
+            <img class="item2" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/56/26/9c/paraiso-escondido-cabanas.jpg?w=1400&h=-1&s=1">
+            <img class="item3" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/56/24/26/paraiso-escondido-cabanas.jpg?w=1000&h=-1&s=1">
+            <img class="item4" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/8b/d6/28/paraiso-escondido-cabanas.jpg?w=1400&h=-1&s=1">
+    </div>
+    </section>
+    <hr>
+    <section class="descripcion">
+        <h1>Hotel La casona</h1>
+        <p>Ubicado en medio de la naturaleza, el Hotel La Casona ofrece un ambiente tranquilo con cómodas cabañas, gastronomía típica y cercanía a los
+                principales atractivos turísticos de San Luis</p>
+        
+        <h2>Servicios</h2>
+    </section>
+    <section class="servicios">
+  <ul>
+    <li><i class="fa-solid fa-wifi"></i> Wi-Fi gratuito</li>
+    <li><i class="fa-solid fa-utensils"></i> Restaurante con comida típica</li>
+    <li><i class="fa-solid fa-car"></i> Parqueadero privado</li>
+    <li><i class="fa-solid fa-person-hiking"></i> Tours guiados por la naturaleza</li>
+    <li><i class="fa-solid fa-bus"></i> Cerca al transporte</li>
+  </ul>
+</section>
+<section class="footer">
+    <div class="reserva">
+        <h2>Reservas</h2>
+        <form id="reservas">
+            <label>Nombre</label><br>
+            <input type="text" id="nombre" required><br><br>
+
+            <label>fecha de llegada</label><br>
+            <input type="date" id="llegada" required><br><br>
+
+            <label>fecha de salida</labe><br>
+            <input type="date" id="salida" required><br><br>
+
+            <label>numero de personas</label><br>
+            <input type="number" id="personas" required><br><br>
+
+            <label>tipo habitacion</label><br>
+            <select id="habitacion" required><br><br>
+                <option value="sencilla">sencilla</option>
+                <option value="doble">Doble</option>
+                <option value="familiar">familiar</option>
+            </select><br><br>
+
+            <button type="submit">reservar por whattsap</button>
+        </form>
+
+    </div>
+    <div class="ubicacion">
+    <h2>ubicacion</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.629047671352!2d-74.99517942570469!3d6.045525893940181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46ad6aeb2b9a1d%3A0x4c5db003bd2cac0c!2sHotel%20La%20Casona!5e0!3m2!1ses-419!2sco!4v1758661763312!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+ 
+</section>
+
+
+</main>
+
+
+</body>
+<script src="/script/sanluis.js"></script>
+</html>
