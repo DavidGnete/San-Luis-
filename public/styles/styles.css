@@ -1,0 +1,327 @@
+*, * ::before, *::after{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    font-family: Merienda;
+}
+
+.fondo{
+    background-image: url('/public/images/ricky-beron-9aQgNay52u0-unsplash.jpg');
+
+}
+
+#encabezado {
+    display: grid;
+    grid-template-columns: 1fr max-content 1000px;
+    align-items: center;
+    width: 100%;
+    color: rgb(4, 103, 116);
+}
+
+#encabezado nav ul{
+margin-left: 90px;
+padding: 0;
+list-style: none;
+}
+
+#encabezado nav a{
+    justify-self: start;
+    margin-right: 15%;
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+
+#encabezado .logo img{
+    justify-self: center;
+    width: 200px;
+    height: 190px;
+    display: block;
+}
+#encabezado #logosanluis {
+    justify-self: end;
+}
+
+
+#encabezado #logosanluis h3 {
+    justify-self: end;
+    width: 250px;
+    margin-right: 50px;
+    font-size: 60px;
+}
+
+.photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.carrusel {
+    position: relative;
+    max-width: 900px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    flex-shrink: 0;
+    object-position:center;
+}
+
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.flecha.izquierda{
+    left: 15px;
+}
+.flecha.derecha{
+    right: 15px;
+}
+
+.botons {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255,0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.bton .active{
+    background-color: white;
+}
+
+h1, h2  {
+    font-family:Merienda;
+    font-size: 4vh;
+    display: block;
+    text-align: center;
+    color: rgb(30, 164, 15);
+}
+
+
+
+.container{
+    padding: 20px;
+}
+
+
+.text{
+    font-family: sans-serif;
+    font-size: 3vh;
+    margin: 0;
+    text-align: center;
+    
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    font-family:'Merienda';
+    font-size: 3vh;
+}
+
+
+
+.slide2 img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.slider-task {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slide2{
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: rgb(0, 255, 76);
+}
+
+.slide2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+.slide2 h3 {
+    text-align: center;
+    font-size: 30px;
+
+}
+.container2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url('/public/images/lina-trochez-2_ECZolPuYw-unsplash.jpg');
+    background-position: center bottom;
+    background-size: cover;
+}
+
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 5px;
+}
+
+iframe{
+    width: 90%;
+}
+
+.map h1 {
+    color: white;
+}
+
+
+/* -------------------------------
+  Responsive fixes — pegar al final
+   (no reemplazar el CSS anterior)
+   -------------------------------*/
+
+/* 1) Hacer el carrusel realmente responsive */
+.carrusel {
+  width: 95%;
+  max-width: 900px; /* conserva el tamaño en desktop */
+  margin: 20px auto;
+}
+
+/* 2) Centrado correcto de los dots (botons) */
+.botons {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%); /* <-- FIX: antes usaba translateY */
+  display: flex;
+  gap: 8px;
+  z-index: 5;
+}
+
+/* 4) Ajustes generales móviles (tablet / pequeño escritorio) */
+@media (max-width: 1200px) {
+  #encabezado {
+    grid-template-columns: 1fr max-content 300px;
+  }
+  #encabezado .logo img { width: 170px; height: auto; }
+  #encabezado #logosanluis h3 { font-size: 48px; margin-right: 20px; }
+  #encabezado nav ul { margin-left: 20px; }
+}
+
+/* 5) Tablet / pantallas medianas */
+@media (max-width: 900px) {
+  /* simplificamos la cabecera a dos columnas:
+     (nav + logo). Ocultamos el título grande para ganar espacio */
+  #encabezado {
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    align-items: center;
+  }
+  #encabezado #logosanluis { display: none; } /* oculta el h3 grande */
+  #encabezado nav ul {
+    margin-left: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  #encabezado nav a {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+
+  /* carrusel e imágenes */
+  .slides img { max-height: 420px; object-position: center; }
+  iframe { max-width: 100%; height: 360px; }
+}
+
+/* 6) Móvil — todo en una columna */
+@media (max-width: 600px) {
+  #encabezado {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 10px;
+    padding: 10px;
+  }
+
+  #encabezado nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-left: 0;
+  }
+
+  #encabezado nav a {
+    font-size: 16px;
+    margin-right: 6px;
+    padding: 6px 8px;
+  }
+
+  #encabezado .logo img { width: 120px; }
+
+  h1 { font-size: 6.5vw; } /* adaptativo */
+  h2 { font-size: 5.5vw; }
+  .text { font-size: 4.2vw; padding: 0 10px; }
+  iframe { height: 260px; width: 95%; }
+}
+
+@media (max-width: 900px) {
+  .slide2 img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* En móviles pequeños */
+@media (max-width: 600px) {
+  .slide2 img {
+    width: 100%;
+    height: auto;
+    max-width: 320px; /* se ajusta pero no se estira de más */
+  }
+}
+
+
+
+
+
