@@ -371,6 +371,35 @@
     margin: 40px 20px;
   }
 
+
+  /* 📱 Móviles pequeños */
+@media (max-width: 480px) {
+  .slide2 button {
+    top: 70%;                /* un poco más abajo si la imagen es más alta */
+    padding: 5px 10px;       /* más pequeño */
+    font-size: 0.8rem;
+  }
+}
+
+/* 📲 Tablets */
+@media (max-width: 768px) {
+  .slide2 button {
+    top: 72%;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 💻 Escritorio */
+@media (min-width: 769px) {
+  .slide2 button {
+    top: 75%;
+    padding: 8px 14px;
+    font-size: 1rem;
+  }
+}
+
+
   .inicio {
     max-width: 90%;
     gap: 20px;
