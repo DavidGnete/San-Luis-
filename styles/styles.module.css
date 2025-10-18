@@ -1,0 +1,461 @@
+/* ====== ENCABEZADO ====== */
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  
+}
+
+.fondo {
+  height: 850px;
+  background-image: url('/images/ricky-beron-9aQgNay52u0-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.enlaces a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.enlaces a:hover {
+  color: #ffd700;
+}
+
+.sanluis {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* ====== SLIDER PRINCIPAL (REACT) ====== */
+.sliderContainer {
+  position: relative;
+  max-width: 900px;
+  height: 500px;
+  margin: 40px auto;
+  margin-top: 20vh;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ====== FLECHAS ====== */
+.flecha {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 12px;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+  border: none;
+  border-radius: 50%;
+  user-select: none;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.flecha:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.izquierda {
+  left: 15px;
+}
+
+.derecha {
+  right: 15px;
+}
+
+/* ====== DOTS ====== */
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+/* ====== CONTENIDO PRINCIPAL ====== */
+.fondoMain {
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.text {
+  max-width: 1200px;
+}
+
+
+.contenedores {
+  margin: 80px;
+  margin-top: 130px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#contenedor {
+  margin: 80px;
+  margin-top: 130px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+
+.fotos {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+.inicio {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  max-width: 600px;
+  text-align: justify;
+  gap: 50px;
+}
+
+
+.inicio p {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.8rem;
+}
+
+.sanluis2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+
+#textfotos{
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #333;
+  font-size: clamp(1.5rem, 2vw, 1rem);
+  margin-bottom: 1.2rem;
+}
+
+.galleria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+  padding: 2rem 5%;
+}
+
+.arbol {
+  width: 300px;
+  height: 280px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #e9e9e7;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+
+.arbol:hover{
+  transform: scale(2.00);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== SECCIÓN COSAS POR HACER ====== */
+.container2 {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.sliderTask {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.8rem;
+}
+
+.opciones {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 80px;
+}
+
+
+.slide2 {
+  text-decoration: none;
+  margin: 10px;
+  color: #222;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+
+
+.slide2:hover {
+  transform: translateY(-8px);
+}
+
+.slide2 img {
+  width: 300px;
+  height: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.slide2 h3 {
+  margin-top: 0.8rem;
+  font-size: 2.3rem;
+  color: #333;
+}
+
+.fintexto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.8rem;
+
+}
+
+/* ====== MAPA ====== */
+.map {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.map h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.8rem;
+  font-size: 2.3rem;
+  color: #333;
+
+}
+
+.map iframe {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+
+
+/* ====== RESPONSIVE ====== */
+
+/* Pantallas medianas (tablets y pequeños portátiles) */
+@media (max-width: 1024px) {
+  .contenedores,
+  #contenedor {
+    grid-template-columns: 1fr; /* pasa de 2 columnas a 1 */
+    text-align: center;
+    margin: 40px 20px;
+  }
+
+  .inicio {
+    max-width: 90%;
+    gap: 20px;
+  }
+
+  .fotos {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .galleria {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+    gap: 1rem;
+  }
+
+  .slide2 img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .sliderContainer {
+    max-width: 90%;
+    height: 400px;
+  }
+
+  .enlaces a {
+    font-size: 18px;
+  }
+}
+
+/* Pantallas pequeñas (celulares grandes) */
+@media (max-width: 768px) {
+  .encabezado {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .enlaces a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .sanluis {
+    font-size: 1.8rem;
+  }
+
+  .sliderContainer {
+    height: 280px;
+  }
+
+  .contenedores,
+  #contenedor {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+
+  .galleria {
+    grid-template-columns: 1fr;
+  }
+
+  .fotos {
+    width: 100%;
+    height: auto;
+  }
+
+  .slide2 img {
+    width: 90%;
+    height: 250px;
+  }
+
+  .slide2 h3 {
+    font-size: 1.5rem;
+  }
+
+  .fintexto {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+/* Pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  .sliderContainer {
+    height: 220px;
+  }
+
+  .enlaces a {
+    font-size: 16px;
+  }
+
+  .sanluis2 {
+    font-size: 1.4rem;
+  }
+
+  .slide2 img {
+    height: 200px;
+  }
+
+  .arbol {
+    width: 90%;
+    height: 200px;
+  }
+
+  .map iframe {
+    width: 100%;
+  }
+}
+

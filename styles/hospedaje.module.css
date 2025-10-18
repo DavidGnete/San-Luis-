@@ -1,0 +1,143 @@
+/* ====== ENCABEZADO ====== */
+.enlaces a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.enlaces a:hover {
+  color: #ffd700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem;
+  background: #f8f9fa;
+}
+
+
+
+
+/* ====== RESPONSIVE ====== */
+/* ====== RESPONSIVE ====== */
+
+/* === Tablets (pantallas medianas) === */
+@media (max-width: 1024px) {
+  .encabezado {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .enlaces a {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .cardInfo h3 {
+    font-size: 22px;
+  }
+
+  .cardInfo p {
+    font-size: 15px;
+  }
+
+  .services li {
+    font-size: 16px;
+  }
+}
+
+/* === Móviles grandes (pantallas pequeñas) === */
+@media (max-width: 768px) {
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .enlaces a {
+    font-size: 18px;
+    margin: 0;
+    padding: 8px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Solo una card por fila */
+    padding: 1.5rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cardInfo {
+    padding: 1rem;
+  }
+
+  .cardInfo h3 {
+    font-size: 20px;
+  }
+
+  .cardInfo p {
+    font-size: 15px;
+  }
+
+  .services li {
+    font-size: 14px;
+  }
+}
+
+/* === Celulares pequeños (menos de 480px) === */
+@media (max-width: 480px) {
+  .encabezado {
+    padding: 0.5rem;
+  }
+
+  .enlaces a {
+    font-size: 16px;
+  }
+
+  .grid {
+    padding: 1rem;
+  }
+
+  .cardInfo h3 {
+    font-size: 18px;
+  }
+
+  .cardInfo p {
+    font-size: 14px;
+  }
+
+  .services li {
+    font-size: 13px;
+  }
+}

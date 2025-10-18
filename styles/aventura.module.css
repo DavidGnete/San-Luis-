@@ -1,0 +1,119 @@
+.encabezado {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(0, 133, 11);
+  border-radius: 5px;
+}
+
+.enlaces {
+  margin-left: 90px;
+  padding: 0;
+  list-style: none;
+}
+
+.enlaces a {
+  margin-right: 15%;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+
+.encabezado img {
+  height: 70px;
+  margin: 0;
+  text-align: center;
+}
+
+.contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardSlider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.cardSlider img {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cardSlider img.active {
+  display: block;
+}
+
+.cardSlider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.cardInfo h3 {
+  margin: 0 0 10px;
+  color: #007B5E;
+}
+
+.cardInfo p {
+  font-size: 14px;
+  color: #333;
+}
+
+.services {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.services li {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #007B5E;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #00563f;
+}
+
