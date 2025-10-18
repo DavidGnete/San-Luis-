@@ -13,7 +13,7 @@ export default function SliderPrincipal() {
   const [index, setIndex] = useState(0);
   const total = images.length;
 
-  const showSlide = (i) => {
+  const showSlide = (i:number) => {
     // Asegura que el slider sea infinito
     setIndex((i + total) % total);
   };

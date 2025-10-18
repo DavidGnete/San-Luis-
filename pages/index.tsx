@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import styles from "../styles/styles.module.css";
 import SliderPrincipal from "@/componentes/principal"; 
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
