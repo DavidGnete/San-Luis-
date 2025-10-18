@@ -38,6 +38,7 @@ export default function Home() {
         />
         <link rel="canonical" href="https://visitasanluisantioquia.shop/" />
         <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"
           href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
           rel="stylesheet"
         />
@@ -221,11 +222,13 @@ export default function Home() {
           <div className={styles.opciones}>
             <a className={styles.slide2} href="/hospedajes">
               <img src="/images/hospedaje.jpg" loading="lazy" alt="Hospedajes" />
+              <button type="button" className={`btn btn-light ${styles.overlayButton}`}>Reserva</button>
               <h3>Hospedajes</h3>
             </a>
             <>
             <a className={styles.slide2} href="/aventura">
               <img src="/images/rafting.jpg" loading="lazy" alt="Aventuras" />
+              <button type="button" className={`btn btn-light ${styles.overlayButton}`}>Reserva</button>
               <h3>Aventuras</h3>
             </a>
             </>

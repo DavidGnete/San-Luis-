@@ -1,26 +1,38 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../styles/styles.module.css";
-
 
 export default function SliderPrincipal() {
   const images = [
     "/images/rio2.jpg",
     "/images/rio1.jpg",
-    "/images/rio3.jpg",
-    "/images/rio4.jpg",
+    "/images/pueblo.jpg",
+    "/images/charcoslide.jpg",
+    "/images/cubaslider.jpg",
+    "/images/plantaslide.jpg",
+    "/images/municipio.jpg",
+
+    
   ];
 
   const [index, setIndex] = useState(0);
   const total = images.length;
 
-  const showSlide = (i:number) => {
-    // Asegura que el slider sea infinito
+  const showSlide = (i: number) => {
     setIndex((i + total) % total);
   };
 
+  // ⏱ Auto cambio cada 4 segundos
+  useEffect(() => {
+    const intervalo = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % total);
+    }, 4000); // cambia cada 4s (puedes ajustar)
+
+    return () => clearInterval(intervalo);
+  }, [total]);
+
   return (
     <div className={styles.sliderContainer}>
-      {/* Flechas */}
+      {/* Flecha izquierda */}
       <button
         className={`${styles.flecha} ${styles.izquierda}`}
         onClick={() => showSlide(index - 1)}
@@ -28,6 +40,7 @@ export default function SliderPrincipal() {
         ❮
       </button>
 
+      {/* Slides */}
       <div className={styles.slides}>
         {images.map((src, i) => (
           <div
@@ -39,6 +52,7 @@ export default function SliderPrincipal() {
         ))}
       </div>
 
+      {/* Flecha derecha */}
       <button
         className={`${styles.flecha} ${styles.derecha}`}
         onClick={() => showSlide(index + 1)}
