@@ -7,7 +7,7 @@ export default function FormReserva() {
   const [personas, setPersonas] = useState("");
   const [plan, setPlan] = useState("basico");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const telefono = "573108006524"; // 📞 tu número de WhatsApp con el código del país (57 = Colombia)
