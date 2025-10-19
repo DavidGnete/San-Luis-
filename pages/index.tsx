@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import styles from "../styles/styles.module.css";
 import SliderPrincipal from "@/componentes/principal"; 
-import Link from "next/link";
+import Encabezado from "@/componentes/encabezado";
 
 export default function Home() {
   useEffect(() => {
@@ -48,20 +48,9 @@ export default function Home() {
 
       <header className={styles.fondo}>
         <header className={styles.fondo}>
-  <div className={styles.encabezado}>
-    <nav>
-      <ul>
-        <li className={styles.enlaces}>
-          <a href="/">Inicio</a>
-          <a href="/hospedajes">Hoteles</a>
-          <a href="/aventura">Cosas por hacer</a>
-        </li>
-      </ul>
-    </nav>
-    <h3 className={styles.sanluis}>San Luis</h3>
-  </div>
 
   {/* 🔥 Aquí insertamos el componente del slider */}
+  <Encabezado />
   <SliderPrincipal />
 </header>
 

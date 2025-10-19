@@ -1,21 +1,11 @@
 import Card from "../componentes/card";
 import styles from "../styles/hospedaje.module.css";
+import Encabezado from "@/componentes/encabezado";
 
 export default function Hoteles() {
   return (
     <main>
-      <div className={styles.encabezado}>
-    <nav>
-      <ul>
-        <li className={styles.enlaces}>
-          <a href="/">Inicio</a>
-          <a href="/hospedajes">Hoteles</a>
-          <a href="/aventura">Cosas por hacer</a>
-        </li>
-      </ul>
-    </nav>
-    <h3 className={styles.sanluis}>San Luis</h3>
-  </div>
+     <Encabezado />
       <div className={styles.grid}>
       <Card
         title="Hotel La Casona"

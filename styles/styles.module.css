@@ -17,33 +17,6 @@
   background-repeat: no-repeat;
 }
 
-.encabezado {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.enlaces a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  margin-right: 20px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.enlaces a:hover {
-  color: #ffd700;
-}
-
-.sanluis {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #fff;
-}
-
 /* ====== SLIDER PRINCIPAL (REACT) ====== */
 .sliderContainer {
   position: relative;

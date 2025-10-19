@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../styles/card.module.css";
+import styles from "../styles/Component/card.module.css";
 
 // 🧩 Definimos los tipos que el componente recibe
 interface CardProps {
