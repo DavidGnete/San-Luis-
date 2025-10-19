@@ -19,7 +19,7 @@ export default function Hoteles() {
         title="Hotel Río Claro"
         description="Hospedaje con vista a los ríos de San Luis, perfecto para aventureros."
         image="/images/rio1.jpg"
-        link="/rioclaro"
+        link="/casona"
         services={["🛏️ 8 habitaciones", "🍴 Restaurante", "🌿 Naturaleza"]}
       />
 
@@ -27,7 +27,7 @@ export default function Hoteles() {
         title="EcoHotel El Paraíso"
         description="Hospedaje ecológico en medio de la selva húmeda tropical."
         image="/images/lacasona3.jpg"
-        link="/paraiso"
+        link="/casona"
         services={["🛏️ 6 habitaciones", "🚶 Rutas ecológicas", "🍴 Restaurante"]}
       />
     </div>
