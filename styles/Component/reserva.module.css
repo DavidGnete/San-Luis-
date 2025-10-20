@@ -32,8 +32,21 @@
   box-shadow: 0 0 0 3px rgba(0, 140, 95, 0.15);
 }
 
-.formReserva button {
+#WhatsAppForm {
   background: #008c5f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#bitcon {
+  background: #1694dd;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -48,6 +61,12 @@
   background: #006b48;
   transform: scale(1.03);
 }
+
+.formReserva button:hover {
+  background: #006b48;
+  transform: scale(1.03);
+}
+
 
 /* 🔹 Responsive: para celulares */
 @media (max-width: 600px) {
