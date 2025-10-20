@@ -34,7 +34,7 @@ export default function FormReserva() {
   };
   // ----------------------
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const telefono = "573108006524"; // 📞 tu número de WhatsApp
