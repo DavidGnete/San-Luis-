@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import FormReserva from "@/componentes/reserva";
 import styles from "../styles/habitacion.module.css";
-import Encabezado from "@/componentes/encabezado";
+import Encabezado from "@/components/encabezado";
 
 export default function SanLuis() {
   return (
@@ -84,7 +83,6 @@ export default function SanLuis() {
         <section className={styles.footer}>
           {/* 🟩 FORMULARIO */}
           <div className={styles.reserva}>
-            <FormReserva />
           </div>
          
           {/* 🟩 MAPA */}

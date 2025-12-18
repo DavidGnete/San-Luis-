@@ -1,8 +1,9 @@
 import Head from "next/head";
 import { useEffect } from "react";
 import styles from "../styles/styles.module.css";
-import SliderPrincipal from "@/componentes/principal"; 
-import Encabezado from "@/componentes/encabezado";
+import SliderPrincipal from "@/components/principal"; 
+import Encabezado from "@/components/encabezado";
+
 
 export default function Home() {
   useEffect(() => {
@@ -28,7 +29,7 @@ export default function Home() {
           property="og:description"
           content="Descubre cascadas, ríos y hospedajes en San Luis, la Perla Verde del Oriente Antioqueño."
         />
-        <meta property="og:image" content="/images/cascada.jpg" />
+        <meta property="og:image" content="/images/cascada.webp" />
         <meta property="og:url" content="https://visitasanluisantioquia.shop/" />
         <meta name="twitter:card" content="summary_large_image" />
         <link
@@ -49,7 +50,6 @@ export default function Home() {
       <header className={styles.fondo}>
         <header className={styles.fondo}>
 
-  {/* 🔥 Aquí insertamos el componente del slider */}
   <Encabezado />
   <SliderPrincipal />
 </header>
@@ -67,7 +67,7 @@ export default function Home() {
                 <div className={styles.contenedores}>
                   <img
                     className={styles.fotos}
-                    src="/images/iglesia.jpg"
+                    src="/images/iglesia.webp"
                     alt="Iglesia"
                     loading="lazy"
                   />
@@ -134,37 +134,37 @@ export default function Home() {
                 <div className={styles.galleria}>
                   <img
                     className={styles.arbol}
-                    src="/images/charco.jpg"
+                    src="/images/charco.webp"
                     alt="Atardecer"
                     loading="lazy"
                   />
                   <img
                     className={styles.arbol}
-                    src="/images/cascadacuba.jpg"
+                    src="/images/cascadacuba.webp"
                     alt="Atardecer"
                     loading="lazy"
                   />
                   <img
                     className={styles.arbol}
-                    src="/images/planta.jpg"
+                    src="/images/planta.webp"
                     alt="Atardecer"
                     loading="lazy"
                   />
                   <img
                     className={styles.arbol}
-                    src="/images/charcodos.jpg"
+                    src="/images/charcodos.webp"
                     alt="Atardecer"
                     loading="lazy"
                   />
                   <img
                     className={styles.arbol}
-                    src="/images/turismouno.jpg"
+                    src="/images/turismouno.webp"
                     alt="Atardecer"
                     loading="lazy"
                   />
                   <img
                     className={styles.arbol}
-                    src="/images/turismodos.jpg"
+                    src="/images/turismodos.webp"
                     alt="Atardecer"
                     loading="lazy"
                   />
@@ -208,23 +208,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.container2}>
-          <h2 className={styles.titulo}>No Esperes Mas Reserva Tu Aventura</h2>
-          <div className={styles.opciones}>
-            <a className={styles.slide2} href="/hospedajes">
-              <img src="/images/hospedaje.jpg" loading="lazy" alt="Hospedajes" />
-              <button type="button" className={`btn btn-light ${styles.overlayButton}`}>Reserva</button>
-              <h3>Hospedajes</h3>
-            </a>
-            <>
-            <a className={styles.slide2} href="/aventura">
-              <img src="/images/rafting.jpg" loading="lazy" alt="Aventuras" />
-              <button type="button" className={`btn btn-light ${styles.overlayButton}`}>Reserva</button>
-              <h3>Aventuras</h3>
-            </a>
-            </>
-          </div>
-        </section>
 
         <div className={styles.fintexto}>
           <h2>Clima, ubicación y cómo llegar</h2>
@@ -246,10 +229,6 @@ export default function Home() {
           ></iframe>
         </section>
       </main>
-      <div id={styles.Pfinal}>
-            <img src="/images/anuncio.jpg" alt="San Luis" style={{ width: '100%', height: 'auto', borderRadius: '10px' , opacity: 0.8 }} />
-
-          </div>
     </>
   );
 }

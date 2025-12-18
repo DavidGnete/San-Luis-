@@ -3,13 +3,13 @@ import styles from "../styles/styles.module.css";
 
 export default function SliderPrincipal() {
   const images = [
-    "/images/rio2.jpg",
-    "/images/rio1.jpg",
-    "/images/pueblo.jpg",
-    "/images/charcoslide.jpg",
-    "/images/cubaslider.jpg",
-    "/images/plantaslide.jpg",
-    "/images/municipio.jpg",
+    "/images/rio2.webp",
+    "/images/rio1.webp",
+    "/images/pueblo.webp",
+    "/images/charcoslide.webp",
+    "/images/cubaslider.webp",
+    "/images/plantaslide.webp",
+    "/images/municipio.webp",
 
     
   ];
@@ -47,7 +47,8 @@ export default function SliderPrincipal() {
             key={i}
             className={`${styles.slide} ${i === index ? styles.active : ""}`}
           >
-            <img src={src} alt={`Slide ${i + 1}`} />
+            <img src={src} alt={`Slide ${i + 1}`}/>
+            
           </div>
         ))}
       </div>

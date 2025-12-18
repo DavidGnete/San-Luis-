@@ -1,6 +1,6 @@
-import Card from "../componentes/card";
+import Card from "../components/card";
 import styles from "../styles/hospedaje.module.css";
-import Encabezado from "@/componentes/encabezado";
+import Encabezado from "@/components/encabezado";
 
 export default function Hoteles() {
   return (
@@ -18,7 +18,7 @@ export default function Hoteles() {
       <Card
         title="Hotel Río Claro"
         description="Hospedaje con vista a los ríos de San Luis, perfecto para aventureros."
-        image="/images/rio1.jpg"
+        image="/images/rio1.webp"
         link="/casona"
         services={["🛏️ 8 habitaciones", "🍴 Restaurante", "🌿 Naturaleza"]}
       />

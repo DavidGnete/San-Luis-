@@ -86,7 +86,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  align-items: start;
+  align-items: center;
   background-color: #fafafa;
   padding: 30px;
   border-radius: 12px;
