@@ -3,20 +3,16 @@ import { useEffect } from "react";
 import styles from "../styles/styles.module.css";
 import SliderPrincipal from "@/components/principal"; 
 import Encabezado from "@/components/encabezado";
+import Link from "next/link";
 
 
 export default function Home() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "/script/script.js";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
 
   return (
     <>
       <Head>
         <title>San Luis Antioquia | Turismo, Cascadas, Charcos Hoteles y Hospedajes</title>
+        <link rel="icon" type="image/png" href="/favicon.png" />
         <meta
           name="description"
           content="Descubre San Luis, Antioquia: hoteles, hospedajes y aventuras turísticas en el corazón de Antioquia. Encuentra cascadas, ríos y planes de naturaleza."

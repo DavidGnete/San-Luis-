@@ -21,12 +21,11 @@ export default function Encabezado() {
       </div>
 
       {/* Menú con clase condicional */}
-      <nav className={`${styles.enlaces} ${menuAbierto ? styles.mostrar : ""}`}>
-        <Link href="/">Inicio</Link>
+   
       {/*   <Link href="/hospedajes">Hoteles</Link>
         <Link href="/aventura">Cosas por hacer</Link> */}
-      </nav>
-      <h3 className={styles.sanluis}>San Luis</h3>
+      
+      <h3 className={styles.sanluis} >San Luis</h3>
     </header>
   );
 }
